@@ -24,19 +24,16 @@ Das Skript prüft, ob die Umgebungsvariable `JAVA_HOME` gesetzt ist. Falls nicht
    Lade das Skript herunter und mache es ausführbar:
 chmod +x set_java_home.sh
 
-text
 
 2. **Skript ausführen**
 ./set_java_home.sh
 
-text
 Nach der Ausführung ist die Variable `JAVA_HOME` gesetzt und der `PATH` angepasst (sofern Java installiert ist).
 
 3. **In die Shell einbinden (optional)**  
 Um das Skript automatisch beim Start einer Shell auszuführen, füge es in deine `.bashrc` oder `.profile` ein:
 source /pfad/zu/set_java_home.sh
 
-text
 
 ## Funktionsweise
 
@@ -56,20 +53,16 @@ Wähle die gewünschte Java-Version aus einer Liste:
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 
-text
 
 ### Nicht-interaktive Auswahl
 
 Alle verfügbaren Java-Versionen anzeigen:
 sudo update-java-alternatives --list
 
-text
-
 Eine bestimmte Version setzen (Beispiel für OpenJDK 11):
 sudo update-alternatives --set java /usr/lib/jvm/java-11-openjdk-amd64/bin/java
 sudo update-alternatives --set javac /usr/lib/jvm/java-11-openjdk-amd64/bin/javac
 
-text
 > **Hinweis:** Passe die Pfade an deine installierten Java-Versionen an.
 
 ## Beispielausgabe
